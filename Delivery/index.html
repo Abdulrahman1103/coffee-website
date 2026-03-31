@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Delivery</title>
+    <link rel="stylesheet" href="stylesD.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- Navigation bar section -->
+      <nav class="navbar">
+          
+  
+          
+          <div class="logo">
+              <img src="images/logo.png" alt="Logo"> 
+          </div>
+  
+          
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../LogIn-Regster/homepage.php" class="active">Home</a></li> 
+                <li><a href="../Story/story.html">Story</a></li>
+                <li><a href="../Meun/index.html">Menu</a></li>
+                <li><a href="../Delivery/index.html">Delivery</a></li>
+                <li><a href="../Contact/contact.html">Contact</a></li>
+                <li><a href="../LogIn-Regster/logout.php" class="btn Login-in"> Log-out</a></li>
+          </ul>
+  
+      </nav>
+  </header>
+
+
+    <div class="container">
+        <h1>Coffee Shop Delivery</h1>
+        <form action="submit_order.php" method="POST">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+
+            <button type="submit"  onclick="window.location.href='../Order now/order_now.php'">Place Order</button>
+        </form>
+    </div>
+
+</body>
+</html>

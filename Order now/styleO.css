@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: "Playfair Display", serif;
+    background-image: url('images/bg1.png'); /* Path of background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+
+
+:root {
+    --main-color: #3b261b;
+    --secondary-color: #e8c191;
+    --white-color: #ffffff;
+    --black-color: #313538;
+    --red-color: #d34845;
+    --big-font: 4.5rem;
+    --heading-family: "Playfair Display", serif;
+    --p-family: "Roboto", system-ui;
+}
+
+
+/*Navbar Section*/
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: 70px;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    left: 100px;
+    transition: transform 0.5s ease;
+}
+
+.logo img {
+    height: 40px;
+    
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+}
+  
+
+.navbar.active {
+    height: 100vh;
+    background-color: var(--white-color);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-links.active {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 400px;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links a {
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0 15px;
+    font-size: var(--p-font);
+    transition: all ease 0.55s;
+}
+
+.nav-links a:hover {
+    color: var(--red-color);
+}
+
+
+.Login-in {
+    background-color: transparent;
+    color: var(--main-color);
+    display: inline-block;
+    border: 1px solid var(--main-color);
+    padding: 12px 32px;
+}
+
+.Login-in:hover {
+    background-color: var(--main-color);
+    color: var(--white-color) !important;
+}
+
+
+
+
+
+
+.All-item{
+    margin-left: 100px;
+    width: 900px;
+    display: grid;
+    grid-template-rows: 360px 360px 360px;
+    grid-template-columns: 300px 300px 300px;
+    
+    
+}
+
+
+.item{
+    margin-left: 50px;
+    margin-top: 10px;
+    img{
+        width: 200px;
+        border-radius: 10px;
+    }
+    h4{
+    color: rgb(114, 109, 109);
+    }
+
+    h3{
+        margin-top: 10px;
+    position: relative;
+    bottom: 10px;
+    }
+
+    .Mony{
+    position: relative;
+    bottom: 15px;
+    color: chocolate;
+
+    }
+}
+
+.Add{
+    position: relative;
+    left: 30px;
+    color: chocolate;
+    bottom: 15px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: chocolate;
+}
+
+
+.Add:hover + .Addnumber {
+    background-color: chocolate;
+    
+}
+
+
+.Cart {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    position: relative;
+    left: 70rem;
+    bottom: 63rem;
+    background-color: white;
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Cart h2 {
+    margin-bottom: 30px;
+}
+
+.Cart ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.Cart ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.Cart h3 {
+    margin-bottom: 20px;
+}
+
+#confirmButton {
+    width: 100%;
+    padding: 10px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmButton:hover {
+    background-color: darkorange;
+}
+
+.removeItem {
+    font-size: 20px;
+    background-color: white;
+    border: none;
+}
+
+
+
+
